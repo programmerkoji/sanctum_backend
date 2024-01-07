@@ -17,4 +17,9 @@ class Word extends Model
         'memory',
         'memo',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
